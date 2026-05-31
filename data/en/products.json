@@ -1,0 +1,47 @@
+[
+  {
+    "id": "multi-v-complex",
+    "name": "Multi-V Complex",
+    "image": "assets/images/27.png",
+    "category": "vitamins",
+    "healthGoal": "daily-wellness",
+    "formulationType": "capsule",
+    "markets": ["egypt", "gcc"],
+    "description": "A comprehensive daily multivitamin formula to support overall health and vitality.",
+    "benefits": ["Supports energy production", "Promotes immune health", "Fills dietary gaps"],
+    "ingredients": ["Vitamin A", "Vitamin C", "Vitamin D3", "Vitamin E", "B-Complex"],
+    "usage": "Take one capsule daily with food.",
+    "specifications": "60 capsules per bottle",
+    "certifications": ["GMP", "ISO 9001"]
+  },
+  {
+    "id": "immune-shield",
+    "name": "Immune Shield Pro",
+    "image": "assets/images/28.png",
+    "category": "immune-support",
+    "healthGoal": "immunity",
+    "formulationType": "tablet",
+    "markets": ["egypt", "africa", "international"],
+    "description": "Advanced immune support formula with high-dose Vitamin C, Zinc, and Elderberry.",
+    "benefits": ["Enhances immune response", "Provides antioxidant protection"],
+    "ingredients": ["Vitamin C (1000mg)", "Zinc", "Elderberry Extract"],
+    "usage": "Take two tablets daily at the first sign of immune challenge.",
+    "specifications": "30 tablets per box",
+    "certifications": ["GMP", "FDA Compliance"]
+  },
+  {
+    "id": "whey-isolate",
+    "name": "NutraWhey Isolate",
+    "image": "assets/images/29.png",
+    "category": "sports-nutrition",
+    "healthGoal": "muscle-recovery",
+    "formulationType": "powder",
+    "markets": ["egypt", "gcc", "international"],
+    "description": "Premium whey protein isolate for rapid muscle recovery and growth.",
+    "benefits": ["Fast-absorbing protein", "Supports lean muscle mass", "Low in carbs and fat"],
+    "ingredients": ["Whey Protein Isolate", "Natural Flavors", "Sucralose"],
+    "usage": "Mix one scoop with 200ml of water or milk after training.",
+    "specifications": "1kg tub (30 servings)",
+    "certifications": ["GMP", "ISO 22000", "HACCP"]
+  }
+]

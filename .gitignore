@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+generate_site.py
+move_assets.py
+.vscode/

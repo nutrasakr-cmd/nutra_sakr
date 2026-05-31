@@ -1,0 +1,48 @@
+:root {
+  /* Colors */
+  --primary-blue: #0b3d91; /* Deep Medical Blue */
+  --primary-blue-dark: #082963;
+  --primary-blue-light: #185bd0;
+  
+  --secondary-green: #2ecc71; /* Emerald Green */
+  --secondary-green-dark: #27ae60;
+  --secondary-green-light: #4ade80;
+  
+  --bg-color: #ffffff; /* White */
+  --bg-alt: #f8f9fa; /* Light Gray */
+  --bg-dark: #121212; /* Dark Mode Background */
+  
+  --text-main: #333333;
+  --text-muted: #666666;
+  --text-light: #ffffff;
+  
+  --border-color: #e2e8f0;
+  
+  /* Typography */
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.15);
+  
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --bg-alt: #242424;
+  --text-main: #f0f0f0;
+  --text-muted: #a0a0a0;
+  --border-color: #333333;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.6);
+}

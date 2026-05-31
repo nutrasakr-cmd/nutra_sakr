@@ -1,0 +1,47 @@
+[
+  {
+    "id": "multi-v-complex",
+    "name": "مركب الفيتامينات المتعددة",
+    "image": "assets/images/27.png",
+    "category": "vitamins",
+    "healthGoal": "daily-wellness",
+    "formulationType": "capsule",
+    "markets": ["egypt", "gcc"],
+    "description": "تركيبة يومية شاملة من الفيتامينات المتعددة لدعم الصحة العامة والحيوية.",
+    "benefits": ["يدعم إنتاج الطاقة", "يعزز صحة المناعة", "يسد الفجوات الغذائية"],
+    "ingredients": ["فيتامين أ", "فيتامين ج", "فيتامين د3", "فيتامين هـ", "مجموعة فيتامين ب"],
+    "usage": "تناول كبسولة واحدة يومياً مع الطعام.",
+    "specifications": "60 كبسولة في العبوة",
+    "certifications": ["GMP", "ISO 9001"]
+  },
+  {
+    "id": "immune-shield",
+    "name": "درع المناعة برو",
+    "image": "assets/images/28.png",
+    "category": "immune-support",
+    "healthGoal": "immunity",
+    "formulationType": "tablet",
+    "markets": ["egypt", "africa", "international"],
+    "description": "تركيبة متطورة لدعم المناعة بجرعة عالية من فيتامين ج، الزنك، وخلاصة البيلسان.",
+    "benefits": ["يعزز الاستجابة المناعية", "يوفر حماية مضادة للأكسدة"],
+    "ingredients": ["فيتامين ج (1000 ملغ)", "زنك", "خلاصة البيلسان"],
+    "usage": "تناول قرصين يومياً عند أول علامة على تحديات المناعة.",
+    "specifications": "30 قرص في العلبة",
+    "certifications": ["GMP", "FDA Compliance"]
+  },
+  {
+    "id": "whey-isolate",
+    "name": "نوترا واي إيزوليت",
+    "image": "assets/images/29.png",
+    "category": "sports-nutrition",
+    "healthGoal": "muscle-recovery",
+    "formulationType": "powder",
+    "markets": ["egypt", "gcc", "international"],
+    "description": "بروتين مصل اللبن المعزول الممتاز لسرعة تعافي العضلات ونموها.",
+    "benefits": ["بروتين سريع الامتصاص", "يدعم الكتلة العضلية الخالية من الدهون", "منخفض الكربوهيدرات والدهون"],
+    "ingredients": ["بروتين مصل اللبن المعزول", "نكهات طبيعية", "سكرالوز"],
+    "usage": "اخلط مكيال واحد مع 200 مل من الماء أو الحليب بعد التدريب.",
+    "specifications": "عبوة 1 كجم (30 حصة)",
+    "certifications": ["GMP", "ISO 22000", "HACCP"]
+  }
+]

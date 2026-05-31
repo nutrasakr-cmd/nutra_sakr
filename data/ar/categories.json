@@ -1,0 +1,52 @@
+[
+  {
+    "id": "vitamins",
+    "name": "الفيتامينات",
+    "description": "فيتامينات أساسية للصحة اليومية."
+  },
+  {
+    "id": "minerals",
+    "name": "المعادن",
+    "description": "معادن حيوية لوظائف الجسم."
+  },
+  {
+    "id": "immune-support",
+    "name": "دعم المناعة",
+    "description": "عزز جهازك المناعي."
+  },
+  {
+    "id": "sports-nutrition",
+    "name": "التغذية الرياضية",
+    "description": "تحسين الأداء والتعافي."
+  },
+  {
+    "id": "womens-health",
+    "name": "صحة المرأة",
+    "description": "دعم موجه للمرأة."
+  },
+  {
+    "id": "mens-health",
+    "name": "صحة الرجل",
+    "description": "دعم موجه للرجل."
+  },
+  {
+    "id": "childrens-nutrition",
+    "name": "تغذية الأطفال",
+    "description": "نمو وتطور صحي."
+  },
+  {
+    "id": "functional-foods",
+    "name": "الأطعمة الوظيفية",
+    "description": "أطعمة غنية بالعناصر الغذائية مع فوائد إضافية."
+  },
+  {
+    "id": "herbal-supplements",
+    "name": "المكملات العشبية",
+    "description": "علاجات طبيعية نباتية."
+  },
+  {
+    "id": "wellness-products",
+    "name": "منتجات العافية",
+    "description": "الصحة العامة والعافية."
+  }
+]

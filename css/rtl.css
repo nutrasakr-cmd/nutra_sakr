@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+
+html[dir="rtl"] body {
+  font-family: 'Cairo', var(--font-main);
+}
+
+html[dir="rtl"] h1, 
+html[dir="rtl"] h2, 
+html[dir="rtl"] h3, 
+html[dir="rtl"] h4, 
+html[dir="rtl"] h5, 
+html[dir="rtl"] h6,
+html[dir="rtl"] .btn {
+  font-family: 'Cairo', var(--font-heading);
+}
+
+/* Reverses layout directions where needed */
+html[dir="rtl"] .header-controls {
+  flex-direction: row-reverse;
+}
+
+/* Since Flexbox naturally flips with RTL, we only need to override explicit margins/paddings if any were set left/right */
+/* Example: if there was a margin-right: 10px, in RTL it should be margin-left: 10px */
+
+/* Adjust specific alignments */
+html[dir="rtl"] .text-left { text-align: right; }
+html[dir="rtl"] .text-right { text-align: left; }

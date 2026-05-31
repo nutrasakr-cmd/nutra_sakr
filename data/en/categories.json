@@ -1,0 +1,52 @@
+[
+  {
+    "id": "vitamins",
+    "name": "Vitamins",
+    "description": "Essential vitamins for daily health."
+  },
+  {
+    "id": "minerals",
+    "name": "Minerals",
+    "description": "Crucial minerals for body function."
+  },
+  {
+    "id": "immune-support",
+    "name": "Immune Support",
+    "description": "Boost your immune system."
+  },
+  {
+    "id": "sports-nutrition",
+    "name": "Sports Nutrition",
+    "description": "Enhance performance and recovery."
+  },
+  {
+    "id": "womens-health",
+    "name": "Women's Health",
+    "description": "Targeted support for women."
+  },
+  {
+    "id": "mens-health",
+    "name": "Men's Health",
+    "description": "Targeted support for men."
+  },
+  {
+    "id": "childrens-nutrition",
+    "name": "Children's Nutrition",
+    "description": "Healthy growth and development."
+  },
+  {
+    "id": "functional-foods",
+    "name": "Functional Foods",
+    "description": "Nutrient-dense foods with added benefits."
+  },
+  {
+    "id": "herbal-supplements",
+    "name": "Herbal Supplements",
+    "description": "Natural plant-based remedies."
+  },
+  {
+    "id": "wellness-products",
+    "name": "Wellness Products",
+    "description": "General health and wellness."
+  }
+]
