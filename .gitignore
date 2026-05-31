@@ -4,3 +4,6 @@ __pycache__/
 generate_site.py
 move_assets.py
 .vscode/
+
+# Large video files - upload manually to Hostinger via File Manager
+assets/videos/
