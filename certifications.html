@@ -6,9 +6,400 @@
     <title>Certifications & Quality | NutraSakr - Healthcare & Nutraceutical Solutions</title>
     <meta name="description" content="NutraSakr is a leading modern healthcare, nutraceutical, wellness, and pharmaceutical solutions company serving Egypt, MENA, and international markets.">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/rtl.css">
+    <style>:root {
+  /* Colors */
+  --primary-blue: #0b3d91; /* Deep Medical Blue */
+  --primary-blue-dark: #082963;
+  --primary-blue-light: #185bd0;
+  
+  --secondary-green: #2ecc71; /* Emerald Green */
+  --secondary-green-dark: #27ae60;
+  --secondary-green-light: #4ade80;
+  
+  --bg-color: #ffffff; /* White */
+  --bg-alt: #f8f9fa; /* Light Gray */
+  --bg-dark: #121212; /* Dark Mode Background */
+  
+  --text-main: #333333;
+  --text-muted: #666666;
+  --text-light: #ffffff;
+  
+  --border-color: #e2e8f0;
+  
+  /* Typography */
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.15);
+  
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --bg-alt: #242424;
+  --text-main: #f0f0f0;
+  --text-muted: #a0a0a0;
+  --border-color: #333333;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.6);
+}
+\n@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap');
+@import url('variables.css');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--primary-blue);
+  line-height: 1.2;
+}
+
+[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3, [data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6 {
+  color: var(--primary-blue-light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-blue);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--primary-blue-light);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.bg-alt {
+  background-color: var(--bg-alt);
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-blue-dark);
+  color: var(--text-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-green);
+  color: var(--text-light);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-green-dark);
+  color: var(--text-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+}
+
+/* Header & Nav */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+[data-theme="dark"] .site-header {
+  background-color: rgba(26, 26, 26, 0.95);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.main-nav a {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: var(--secondary-green);
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lang-switch, .theme-switch {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-family: var(--font-main);
+  transition: all var(--transition-fast);
+}
+
+.lang-switch:hover, .theme-switch:hover {
+  background-color: var(--bg-alt);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--bg-alt);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--text-muted);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.card {
+  background-color: var(--bg-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  border: 1px solid var(--border-color);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-image {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--primary-blue-dark);
+  color: rgba(255,255,255,0.8);
+  padding: 60px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.site-footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.site-footer ul {
+  list-style: none;
+}
+
+.site-footer ul li {
+  margin-bottom: 10px;
+}
+
+.site-footer a {
+  color: rgba(255,255,255,0.8);
+}
+
+.site-footer a:hover {
+  color: var(--secondary-green);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Utilities */
+.text-center { text-align: center; }
+.mb-1 { margin-bottom: 10px; }
+.mb-2 { margin-bottom: 20px; }
+.mb-3 { margin-bottom: 30px; }
+.mb-4 { margin-bottom: 40px; }
+.mt-4 { margin-top: 40px; }
+
+/* Dynamic Content Areas */
+.loading-spinner {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--border-color);
+  border-radius: 50%;
+  border-top-color: var(--primary-blue);
+  animation: spin 1s ease-in-out infinite;
+  margin: 40px auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+[data-i18n] {
+  opacity: 1;
+  transition: opacity var(--transition-fast);
+}
+
+.lang-updating [data-i18n] {
+  opacity: 0;
+}
+\n@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+
+html[dir="rtl"] body {
+  font-family: 'Cairo', var(--font-main);
+}
+
+html[dir="rtl"] h1, 
+html[dir="rtl"] h2, 
+html[dir="rtl"] h3, 
+html[dir="rtl"] h4, 
+html[dir="rtl"] h5, 
+html[dir="rtl"] h6,
+html[dir="rtl"] .btn {
+  font-family: 'Cairo', var(--font-heading);
+}
+
+/* Reverses layout directions where needed */
+html[dir="rtl"] .header-controls {
+  flex-direction: row-reverse;
+}
+
+/* Since Flexbox naturally flips with RTL, we only need to override explicit margins/paddings if any were set left/right */
+/* Example: if there was a margin-right: 10px, in RTL it should be margin-left: 10px */
+
+/* Adjust specific alignments */
+html[dir="rtl"] .text-left { text-align: right; }
+html[dir="rtl"] .text-right { text-align: left; }
+</style>
 </head>
 <body>
 
