@@ -25,3 +25,9 @@ html[dir="rtl"] .header-controls {
 /* Adjust specific alignments */
 html[dir="rtl"] .text-left { text-align: right; }
 html[dir="rtl"] .text-right { text-align: left; }
+
+/* Handle specific margins inside HTML generator that were hardcoded */
+html[dir="rtl"] ul[style*="margin-left: 20px;"] {
+  margin-left: 0 !important;
+  margin-right: 20px !important;
+}

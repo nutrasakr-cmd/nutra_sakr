@@ -38,11 +38,11 @@
 }
 
 [data-theme="dark"] {
-  --bg-color: #1a1a1a;
-  --bg-alt: #242424;
-  --text-main: #f0f0f0;
-  --text-muted: #a0a0a0;
-  --border-color: #333333;
+  --bg-color: #0f172a; /* Deep slate/navy blue */
+  --bg-alt: #1e293b; /* Lighter slate blue */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.4);
   --shadow-md: 0 4px 16px rgba(0,0,0,0.6);
 }
