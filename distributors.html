@@ -406,7 +406,7 @@ html[dir="rtl"] .text-right { text-align: left; }
 <header class="site-header">
     <div class="container header-container">
         <a href="index.html" class="logo">
-            <img src="Nutra Sakr.png" alt="NutraSakr Logo">
+            <img src="Nutra Sakr.png" alt="NutraSakr Logo" style="height: 85px; max-height: 85px; padding: 10px 0;">
         </a>
         <nav class="main-nav">
             <ul>
@@ -428,13 +428,39 @@ html[dir="rtl"] .text-right { text-align: left; }
 
 <main id="main-content">
 
-        <section class="section">
-            <div class="container text-center">
-                <h1 class="mb-4">Become a Distributor</h1>
-                <p class="text-muted">Content for Become a Distributor is currently under construction.</p>
+    <section class="section bg-alt" style="padding: 60px 0;">
+        <div class="container text-center">
+            <h1 class="mb-2">Become a Distributor</h1>
+            <p class="text-muted">Partner with NutraSakr for exclusive market opportunities.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 60px;">
+                <div>
+                    <h2 class="mb-3">Why Partner With Us?</h2>
+                    <ul style="list-style: none; line-height: 2.5;">
+                        <li>✅ Highly competitive wholesale pricing</li>
+                        <li>✅ Premium, fast-moving product portfolio</li>
+                        <li>✅ Marketing and scientific training support</li>
+                        <li>✅ Dedicated account management</li>
+                        <li>✅ Flexible minimum order quantities</li>
+                    </ul>
+                </div>
+                <div>
+                    <form class="card" style="display:flex; flex-direction:column; gap:16px;">
+                        <input type="text" placeholder="Company Name" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                        <input type="text" placeholder="Contact Person" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                        <input type="email" placeholder="Email Address" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                        <input type="text" placeholder="Country / Region" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                        <textarea placeholder="Tell us about your distribution capabilities..." rows="4" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);"></textarea>
+                        <button type="button" class="btn btn-primary" onclick="alert('Application submitted.')">Submit Application</button>
+                    </form>
+                </div>
             </div>
-        </section>
-        
+        </div>
+    </section>
+    
 </main>
 
 <footer class="site-footer">
