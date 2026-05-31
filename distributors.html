@@ -488,12 +488,12 @@ html[dir="rtl"] ul[style*="margin-left: 20px;"] {
                 </div>
                 <div>
                     <form class="card" style="display:flex; flex-direction:column; gap:16px;">
-                        <input type="text" placeholder="Company Name" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
-                        <input type="text" placeholder="Contact Person" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
-                        <input type="email" placeholder="Email Address" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
-                        <input type="text" placeholder="Country / Region" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
-                        <textarea placeholder="Tell us about your distribution capabilities..." rows="4" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);"></textarea>
-                        <button type="button" class="btn btn-primary" onclick="alert('Application submitted.')">Submit Application</button>
+                        <input type="text" data-i18n="form_company" placeholder="Company Name" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                        <input type="text" data-i18n="form_contact_person" placeholder="Contact Person" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                        <input type="email" data-i18n="form_email" placeholder="Email Address" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                        <input type="text" data-i18n="form_country" placeholder="Country / Region" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                        <textarea data-i18n="form_dist_desc" placeholder="Tell us about your distribution capabilities..." rows="4" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);"></textarea>
+                        <button type="button" class="btn btn-primary" data-i18n="form_submit_app" onclick="alert('Application submitted.')">Submit Application</button>
                     </form>
                 </div>
             </div>
@@ -528,7 +528,7 @@ html[dir="rtl"] ul[style*="margin-left: 20px;"] {
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 NutraSakr. All Rights Reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+            <p><span data-i18n="footer_rights">&copy; 2026 NutraSakr. All Rights Reserved.</span> | <a href="privacy-policy.html" data-i18n="footer_privacy">Privacy Policy</a> | <a href="terms.html" data-i18n="footer_terms">Terms &amp; Conditions</a></p>
         </div>
     </div>
 </footer>

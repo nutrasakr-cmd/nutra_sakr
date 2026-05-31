@@ -36,12 +36,16 @@ const App = {
     setTimeout(() => {
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (this.translations[key]) {
-          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-            el.placeholder = this.translations[key];
-          } else {
-            el.textContent = this.translations[key];
-          }
+        const val = this.translations[key];
+        if (!val) return;
+        
+        const tag = el.tagName;
+        if (tag === 'INPUT' || tag === 'TEXTAREA') {
+          el.placeholder = val;
+        } else if (tag === 'OPTION') {
+          el.textContent = val;
+        } else {
+          el.textContent = val;
         }
       });
       document.body.classList.remove('lang-updating');

@@ -476,31 +476,31 @@ html[dir="rtl"] ul[style*="margin-left: 20px;"] {
         <div class="container">
             <div class="grid grid-2" style="gap: 60px;">
                 <div>
-                    <h2 class="mb-4">Get In Touch</h2>
+                    <h2 class="mb-4" data-i18n="contact_get_in_touch">Get In Touch</h2>
                     <div style="margin-bottom: 20px;">
-                        <strong>Address:</strong><br>
+                        <strong data-i18n="contact_address_label">Address:</strong><br>
                         <span data-i18n="contact_address">Nutra Sakr, Industrial Area A4', 10th of Ramadan, Egypt</span>
                     </div>
                     <div style="margin-bottom: 20px;">
-                        <strong>Phone:</strong><br>
+                        <strong data-i18n="contact_phone_label">Phone:</strong><br>
                         <span data-i18n="contact_phone">+20 12 23461760</span>
                     </div>
                     <div style="margin-bottom: 20px;">
-                        <strong>Email:</strong><br>
+                        <strong data-i18n="contact_email_label">Email:</strong><br>
                         <a href="mailto:info@nutrasakr.com" data-i18n="contact_email">info@nutrasakr.com</a>
                     </div>
                 </div>
                 <div>
                     <form class="card" style="display:flex; flex-direction:column; gap:16px;">
-                        <input type="text" placeholder="Full Name" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
-                        <input type="email" placeholder="Email Address" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                        <input type="text" id="contact-name" data-i18n="form_full_name" placeholder="Full Name" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                        <input type="email" id="contact-email" data-i18n="form_email" placeholder="Email Address" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
                         <select style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm);">
-                            <option>General Inquiry</option>
-                            <option>Distributor Request</option>
-                            <option>Private Label Inquiry</option>
+                            <option data-i18n="form_general_inquiry">General Inquiry</option>
+                            <option data-i18n="form_distributor_req">Distributor Request</option>
+                            <option data-i18n="form_private_label">Private Label Inquiry</option>
                         </select>
-                        <textarea placeholder="Message" rows="5" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm); resize:vertical;"></textarea>
-                        <button type="button" class="btn btn-primary" onclick="alert('Form submitted via AJAX placeholder')">Send Message</button>
+                        <textarea id="contact-msg" data-i18n="form_message" placeholder="Message" rows="5" required style="padding:12px; border:1px solid var(--border-color); border-radius:var(--radius-sm); resize:vertical;"></textarea>
+                        <button type="button" class="btn btn-primary" data-i18n="form_send" onclick="alert('Form submitted via AJAX placeholder')">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -535,7 +535,7 @@ html[dir="rtl"] ul[style*="margin-left: 20px;"] {
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 NutraSakr. All Rights Reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+            <p><span data-i18n="footer_rights">&copy; 2026 NutraSakr. All Rights Reserved.</span> | <a href="privacy-policy.html" data-i18n="footer_privacy">Privacy Policy</a> | <a href="terms.html" data-i18n="footer_terms">Terms &amp; Conditions</a></p>
         </div>
     </div>
 </footer>
